@@ -1,0 +1,124 @@
+@import "compass/css3/transition";
+
+$bg-color: rgba(28,28,28, 0.8);
+$white: #fff;
+$logo: url(../images/nick_nappi_logo_white.svg);
+$bg-image: url(../images/knives.jpg) no-repeat center center fixed;
+$text-shadow: 0 0 5px rgba(0,0,0,0.9);
+
+html {
+  background: $bg-image;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.menu {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 80;
+  width: 100%;
+  line-height: 12px;
+  background-color: $bg-color;
+  height: 120px;
+
+  .logo {
+    margin: 0 auto;
+    display: block;
+    text-indent: -9999px;
+    margin-top: 15px;
+    background: $logo;
+    background-size: 90px 90px;
+    height: 90px;
+    width: 90px;
+  }
+}
+
+.cta {
+  margin-top: 175px;
+  width: 100%;
+
+  h2, p {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    text-shadow: $text-shadow;
+  }
+
+  p {
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-family: 'Stint Ultra Expanded', serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+}
+
+.social {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  height: 60px;
+  width: 400px;
+  z-index: 9999;
+
+  a {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    margin-right: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-family: "FontAwesome";
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 2em;
+    border: solid 1px $white;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    @include transition(all, ease-in-out, 0.8s);
+
+    &:hover {
+      background-color: $bg-color;
+      border: solid 1px $bg-color;
+    }
+  }
+
+  .facebook-icon {
+    &:before {
+      content: "\f09a";
+    }
+  }
+
+  .twitter-icon {
+    &:before {
+      content: "\f099";
+    }
+  }
+
+  .instagram-icon {
+    &:before {
+      content: "\f16d";
+    }
+  }
+
+  .pinterest-icon {
+    &:before {
+      content: "\f231";
+    }
+  }
+}

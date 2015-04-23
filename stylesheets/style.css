@@ -1,0 +1,115 @@
+/* line 9, ../sass/style.scss */
+html {
+  background: url(../images/knives.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 17, ../sass/style.scss */
+.menu {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 80;
+  width: 100%;
+  line-height: 12px;
+  background-color: rgba(28, 28, 28, 0.8);
+  height: 120px;
+}
+/* line 27, ../sass/style.scss */
+.menu .logo {
+  margin: 0 auto;
+  display: block;
+  text-indent: -9999px;
+  margin-top: 15px;
+  background: url(../images/nick_nappi_logo_white.svg);
+  background-size: 90px 90px;
+  height: 90px;
+  width: 90px;
+}
+
+/* line 39, ../sass/style.scss */
+.cta {
+  margin-top: 175px;
+  width: 100%;
+}
+/* line 43, ../sass/style.scss */
+.cta h2, .cta p {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+/* line 53, ../sass/style.scss */
+.cta p {
+  font-family: 'Stint Ultra Condensed', cursive;
+  font-size: 2.3rem;
+  margin-bottom: 15px;
+}
+/* line 59, ../sass/style.scss */
+.cta h2 {
+  font-family: 'Stint Ultra Expanded', serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+/* line 66, ../sass/style.scss */
+.social {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  height: 60px;
+  width: 400px;
+  z-index: 9999;
+}
+/* line 74, ../sass/style.scss */
+.social a {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  margin-right: 5px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-family: "FontAwesome";
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 2em;
+  border: solid 1px #fff;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-transition: all, ease-in-out, 0.8s;
+  -o-transition: all, ease-in-out, 0.8s;
+  -webkit-transition: all, ease-in-out, 0.8s;
+  transition: all, ease-in-out, 0.8s;
+}
+/* line 95, ../sass/style.scss */
+.social a:hover {
+  background-color: rgba(28, 28, 28, 0.8);
+  border: solid 1px rgba(28, 28, 28, 0.8);
+}
+/* line 102, ../sass/style.scss */
+.social .facebook-icon:before {
+  content: "\f09a";
+}
+/* line 108, ../sass/style.scss */
+.social .twitter-icon:before {
+  content: "\f099";
+}
+/* line 114, ../sass/style.scss */
+.social .instagram-icon:before {
+  content: "\f16d";
+}
+/* line 120, ../sass/style.scss */
+.social .pinterest-icon:before {
+  content: "\f231";
+}
